@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka+One&family=Permanent+Marker&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 2500px;
+    background: #2aade4;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section.gallery {
+    position: relative;
+    padding: 45px 0;
+}
+h2.title {
+    font-size: 44px;
+    font-weight: bold;
+    padding-bottom: 45px;
+    position: relative;
+}
+h2.title::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: yellow;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.gallary-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 30px;
+}
+
+
+.conteiner {
+    display: flex;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: -3em;
+}
+nav {
+    width: 100%;
+    color: #bbb;
+    background: #2aade4;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    position: relative;
+    top: 15px;
+}
+nav ul {
+    text-align: start;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0 3em;
+    line-height: 3em;
+}
+
+nav ul li:hover:not(.logo) {
+    background: #9dcbe4;
+    border-radius: 10px;
+}
+ul:not(.logo) {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Permanent Marker", cursive;
+}
+.A-font {
+    color: whitesmoke;
+}
+.font {
+    color: yellow;
+    position: relative;
+    font-family: "Permanent Marker", cursive;
+    left: 600px;
+    top: 20px;
+    font-size: large;
+}
+.logo {
+    text-align: start;
+    font-family: "Permanent Marker", cursive;
+    font-size: xx-large;
+}
+.foto {
+    height: 70%;
+    width: 70%;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+    left: 500px;
+    border: whitesmoke 5px solid;
+    cursor: zoom-in;
+}
+h2 {
+    font-family: "Permanent Marker", cursive;
+    color: yellow;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.scale:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
