@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 body {
     background: #2aade4;
     position: relative;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Ubuntu", sans-serif;
 }
 section.gallery {
     position: relative;
@@ -150,7 +150,6 @@ ul:not(.logo) {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-family: "Permanent Marker", cursive;
 }
 
 @media (max-width: 360px) {
@@ -173,7 +172,6 @@ ul:not(.logo) {
 }
 .logo{
     text-align: start;
-    font-family: "Permanent Marker", cursive;
     font-size: xx-large;
 
 }
@@ -229,7 +227,6 @@ h2 {
 
 .rolling-text {
     display: inline-block;
-    font-family: "Playfair Display", serif;
     font-size: 48px;
     line-height: 72px;
     letter-spacing: 24px;
