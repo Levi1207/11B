@@ -31,3 +31,12 @@ elements.forEach(element => {
     element.classList.remove('play');
   });
 });
+
+document.getElementById("toggleButton").addEventListener("click", function() {
+  var block = document.getElementById("myBlock");
+  if (block.style.display === "none") {
+      block.style.display = "flex";
+  } else {
+      block.style.display = "flex";
+  }
+});

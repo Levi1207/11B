@@ -40,7 +40,7 @@ h2.title:after {
     overflow: hidden;
     gap: 10px;
     font-size: 0;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 .gallery-item {
     display: block;
@@ -94,8 +94,50 @@ h2.title:after {
 }
 .gallery-item img {
     max-width: 100%;
-    height:auto;
+    height:-webkit-fill-available;
     transition: all 0.5s ease;
+}
+#toggleButton{
+    font-size: 20px;
+}
+
+.button-29 {
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    font-size: 18px;
+}
+
+.button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+#myBlock{
+    display: none;
 }
 @media (max-width: 991px) {
     .gallery-item {
@@ -105,6 +147,9 @@ h2.title:after {
 @media (max-width: 768px) {
     .gallery-item {
         flex: 50%;
+    }
+    .gallery-item img {
+        height:auto;
     }
 }
 @media (max-width: 530px) {
